@@ -1,7 +1,27 @@
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 
-st.title("PAINT")
+st.title("DRAAW ☀️")
+st.markdown("""
+<style>
+
+/* Fondo degradado morado pastel */
+.stApp {
+    background: linear-gradient(
+        135deg,
+        #E9D5FF,
+        #D8B4FE,
+        #F3E8FF
+    );
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #C084FC;
+}
+
+</style>
+""", unsafe_allow_html=True)
 
 with st.sidebar:
     st.subheader("Propiedades del tablero")
